@@ -12,6 +12,9 @@ progress.prototype._create = function () {
 	var progressIndicator = document.createElement('div');
 	progressIndicator.className = 'progress-indicator';
 	progressIndicator.style.background = progress._color;
+	var caption = document.createElement('span');
+	caption.addClass = 'progress-caption';
+	progressIndicator.appendChild(caption);
 	progress.element.appendChild(progressIndicator);
 }
 progress.prototype.setProgress = function (progress) {
