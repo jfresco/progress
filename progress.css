@@ -8,6 +8,7 @@
 	-webkit-transition: width 1s;
 	transition: width 1s;
 	opacity: 0.2;
+  position: relative;
 }
 .progress-caption {
   position: absolute;
