@@ -9,3 +9,6 @@
 	transition: width 1s;
 	opacity: 0.2;
 }
+.progress-caption {
+  position: absolute;
+}

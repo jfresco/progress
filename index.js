@@ -30,3 +30,11 @@ progress.prototype.setColor = function (color) {
 		throw Error('progress: ERROR progress must be a string.')
 	}
 }
+progress.prototype.setCaption = function(caption) {
+	var span = this.element.querySelector('.progress-caption');
+	if (typeof(caption) === 'string') {
+		span.innerHTML = caption;
+	} else {
+		span.appendChild(caption);
+	}
+}
